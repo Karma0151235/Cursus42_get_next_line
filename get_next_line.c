@@ -28,7 +28,7 @@ char	*ft_readline(int fd, char **s_line)
 		return (NULL);
 	if (!ft_append(s_line, NULL, 0))
 		return (free(buffer), NULL);
-	bytes = BUFFER_SIZE;
+	bytes = 1;
 	while (!ft_strchr(*s_line, '\n') && bytes > 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
@@ -89,5 +89,6 @@ char	*get_next_line(int fd)
 	s_line = ft_clearbuffer(s_line);
 	return (line);
 }
+
 
 
