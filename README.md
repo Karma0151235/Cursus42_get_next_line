@@ -9,7 +9,7 @@ get_next_line is apart of the second group of projects. The idea is to return th
 This project includes `main.c` and `test.txt` files for easy testing purposes. Follow the instructions bellow to test the project; this process assumes a CLI interaction with the project.
 
 ## Compilation
-
+`
 # Full Command for Compilation
 gcc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c main.c -o gnl_test
 
@@ -21,7 +21,7 @@ gcc -Wall -Wextra -Werror get_next_line_bonus.c get_next_line_utils_bonus.c main
 
 # Run the Bonus Test Executable
 ./gnl_bonus
-
+`
 
 # Learning Outcomes
 
