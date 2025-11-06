@@ -20,8 +20,8 @@ char	*ft_append(char **s_line, char *buffer, int bytes)
 
 char	*ft_readline(int fd, char **s_line)
 {
-	char  *buffer;
-	int  bytes;
+	char	*buffer;
+	int		bytes;
 
 	buffer = (char *) malloc(BUFFER_SIZE + 1);
 	if (!buffer)
@@ -89,4 +89,5 @@ char	*get_next_line(int fd)
 	s_line = ft_clearbuffer(s_line);
 	return (line);
 }
+
 
