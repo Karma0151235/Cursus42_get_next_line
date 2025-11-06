@@ -1,5 +1,5 @@
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_append(char **s_line, char *buffer, int bytes)
 {
@@ -82,14 +82,14 @@ char	*ft_clearbuffer(char *s_line)
 
 char	*get_next_line(int fd)
 {
-	static char	*s_line;
+	static char	*s_line[_SC_OPEN_MAX];
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
 		return (NULL);
-	if (!ft_readline(fd, &s_line))
+	if (!ft_readline(fd, &s_line[fd]))
 		return (NULL);
-	line = ft_extract(s_line);
-	s_line = ft_clearbuffer(s_line);
+	line = ft_extract(s_line[fd]);
+	s_line[fd] = ft_clearbuffer(s_line[fd]);
 	return (line);
 }
