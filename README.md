@@ -23,6 +23,12 @@ gcc -Wall -Wextra -Werror get_next_line_bonus.c get_next_line_utils_bonus.c main
 ./gnl_bonus
 ```
 
+# Project Details
+
+`get_next_line.c` contains the main functions; the process of which starts from a static cache aiming to contain the contents read from the file. The general flow starts from `ft_readline`, where the cache starts storing contents from the file and checks whether there is a `'\n'` present within the cache, if so, the line will be extracted using `ft_extract` into a different line, then, the cache would be cleared of the line that has been returned from that iteration. `ft_append` simply appends each buffer line into the cache.
+
+`get_next_line_utils` contain the different helper functions used in main, as libft was not allowed in the scope of this project.
+
 # Learning Outcomes
 
 This project aims to solidify the concept of static variables and buffer handling. Personally, I had the opportunity to consolidate knowledge regarding I/O as well as writing robust code whilst maintaining readability and sanitisation of code.
