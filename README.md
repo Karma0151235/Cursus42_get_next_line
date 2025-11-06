@@ -25,7 +25,7 @@ gcc -Wall -Wextra -Werror get_next_line_bonus.c get_next_line_utils_bonus.c main
 
 # Learning Outcomes
 
-This project validated many crucial concepts from the Piscine. Although it is quite rudimentary, it was my first time having to be compliant with good software development principles on this scale (i.e. handling edge cases, improving modularity, etc.).
+This project aims to solidify the concept of static variables and buffer handling. Personally, I had the opportunity to consolidate knowledge regarding I/O as well as writing robust code whilst maintaining readability and sanitisation of code.
 
 
 # Author
