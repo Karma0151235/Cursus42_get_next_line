@@ -8,7 +8,8 @@ char	*ft_append(char **s_line, char *buffer, int bytes)
 	if (!*s_line)
 	{
 		*s_line = ft_strdup("");
-		return (NULL);
+		if (!*s_line)
+			return (NULL);
 	}
 	if (bytes > 0)
 	{
