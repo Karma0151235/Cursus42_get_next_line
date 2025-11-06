@@ -23,10 +23,6 @@ int  main(void)
     printf("Line 4: %s", line);
     free(line);
 
-    line = get_next_line(fd);
-    printf("Line 5: %s", line);
-    free(line);
-
     printf('\n');
 
     close(fd);
