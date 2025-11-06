@@ -49,15 +49,17 @@ char	*ft_strjoin(const char *s1, const char *s2)
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	size_t length_s;
 	char	*str;
 
 	i = 0;
 	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	length_s = ft_strlen(s);
+	if (start >= length_s)
 		return (ft_strdup(""));
-	if (len > ft_strlen(s + start))
-		len = ft_strlen(s + start);
+	if (len > (length_s - (size_t) start))
+		len = (length_s - (size_t) start);
 	str = (char *) malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
