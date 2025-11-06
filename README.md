@@ -6,7 +6,7 @@ get_next_line is apart of the second group of projects. The idea is to return th
 
 # Running and Testing
 
-This project includes `main.c` and `test.txt` files for easy testing purposes. Follow the instructions bellow to test the project; this process assumes a CLI interaction with the project.
+This project includes `main.c` and `test.txt` files for easy testing purposes. Follow the instructions below to test the project; this process assumes a CLI interaction with the project.
 
 ## Compilation
 ```
