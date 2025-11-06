@@ -5,8 +5,7 @@ char	*ft_append(char **s_line, char *buffer, int bytes)
 {
 	char	*temp_line;
 
-	if (!*s_line)
-		if (!(*s_line = ft_strdup("")))
+	if (!*s_line && !(*s_line = ft_strdup("")))
 			return (NULL);
 	if (bytes > 0)
 	{
@@ -90,3 +89,4 @@ char	*get_next_line(int fd)
 	s_line = ft_clearbuffer(s_line);
 	return (line);
 }
+
