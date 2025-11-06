@@ -23,6 +23,9 @@ gcc -Wall -Wextra -Werror get_next_line_bonus.c get_next_line_utils_bonus.c main
 ./gnl_bonus
 ```
 
+## Testing
+
+Similarly, we utilize community testers to verify the correctness and robustness of our solution. This was done after self-testing. To access the tester directory, please proceed to this link: https://github.com/Tripouille/gnlTester.
 # Project Details
 
 `get_next_line.c` contains the main functions; the process of which starts from a static cache aiming to contain the contents read from the file. The general flow starts from `ft_readline`, where the cache starts storing contents from the file and checks whether there is a `'\n'` present within the cache, if so, the line will be extracted using `ft_extract` into a different line, then, the cache would be cleared of the line that has been returned from that iteration. `ft_append` simply appends each buffer line into the cache.
