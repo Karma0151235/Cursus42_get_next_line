@@ -9,11 +9,11 @@
 #  define BUFFER_SIZE 5
 # endif
 
-char  *ft_append(char **s_line, char *buffer, int bytes);
-char  *ft_readline(int fd, char **s_line);
-char  *ft_extract(char *s_line);
-char  *ft_clearbuffer(char *s_line);
-char  *get_next_line(int fd);
+char    *ft_append(char **s_line, char *buffer, int bytes);
+char    *ft_readline(int fd, char **s_line);
+char    *ft_extract(char *s_line);
+char    *ft_clearbuffer(char *s_line);
+char    *get_next_line(int fd);
 
 size_t  ft_strlen(const char *s);
 char    *ft_strchr(const char *s, int c);
